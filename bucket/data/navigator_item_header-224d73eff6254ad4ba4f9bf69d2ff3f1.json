@@ -1,0 +1,23 @@
+{
+  "bucket_data": {
+    "navigator_item_header": {
+      "224d73eff6254ad4ba4f9bf69d2ff3f1": {
+        "color": "#6e0202",
+        "created": "1593166534093",
+        "description": "",
+        "icon": "fontawesome-v5-solid:dice",
+        "id": "224d73eff6254ad4ba4f9bf69d2ff3f1",
+        "label": "Cards",
+        "meta_classification": "",
+        "meta_datatag": "",
+        "meta_schema": "",
+        "order": "2",
+        "owner": "aee2b61c963646eea33f0f46b3701d3e",
+        "parent": "9dfbab42701d40da88e208c828755ecc",
+        "ref_display": "Cards",
+        "schema_version": "0.0",
+        "system_updated": "0"
+      }
+    }
+  }
+}

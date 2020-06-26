@@ -1,0 +1,17 @@
+{
+    "bucket_definition": {
+        "1v7516rm": {
+            "attributes": {
+                "mapper": "CardMapper"
+            },
+            "id": "1v7516rm",
+            "labels": {
+                "label": "test",
+                "labelp": "tests"
+            },
+            "name": "test",
+            "schema_tag": "",
+            "type": "script"
+        }
+    }
+}

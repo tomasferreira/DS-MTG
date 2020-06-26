@@ -1,0 +1,28 @@
+{
+  "bucket_data": {
+    "action_trigger": {
+      "bca8b1dec80c42e28c4a54a737ac6761": {
+        "active": "1",
+        "bucket": "1v7516rm",
+        "condition": [ ],
+        "created": "1593164488962",
+        "description": "",
+        "flow": "separate_file://bucket/data/action_trigger-bca8b1dec80c42e28c4a54a737ac6761-flow.js",
+        "id": "bca8b1dec80c42e28c4a54a737ac6761",
+        "meta_classification": "",
+        "meta_datatag": "",
+        "meta_schema": "",
+        "name": "test",
+        "on": "insert||update",
+        "order": "0",
+        "owner": "aee2b61c963646eea33f0f46b3701d3e",
+        "ref_display": "test",
+        "schema_version": "0.0",
+        "script": "separate_file://bucket/data/action_trigger-bca8b1dec80c42e28c4a54a737ac6761-script.js",
+        "system_updated": "0",
+        "type": "script",
+        "when": "before"
+      }
+    }
+  }
+}

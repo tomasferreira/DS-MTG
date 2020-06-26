@@ -1,0 +1,29 @@
+{
+  "bucket_data": {
+    "navigator_item_list": {
+      "29fcfae0b1804d72ba413227f9445774": {
+        "bucket": "kww2xjs9",
+        "color": "#aaaaaa",
+        "condition": [ ],
+        "created": "1593166534186",
+        "description": "",
+        "icon": "list-alt",
+        "id": "29fcfae0b1804d72ba413227f9445774",
+        "label": "All cards",
+        "meta_classification": "",
+        "meta_datatag": "",
+        "meta_schema": "",
+        "order": "3",
+        "owner": "aee2b61c963646eea33f0f46b3701d3e",
+        "parent": "9dfbab42701d40da88e208c828755ecc",
+        "ref_display": "All cards",
+        "schema_version": "0.0",
+        "sort_by": "name",
+        "sort_direction": "ascending",
+        "subpage": "",
+        "system_updated": "0",
+        "view": ""
+      }
+    }
+  }
+}

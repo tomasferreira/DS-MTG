@@ -1,0 +1,23 @@
+{
+  "bucket_data": {
+    "navigator_item_header": {
+      "e40df1503a7442d6b92dd63b6fe55d83": {
+        "color": "#66a136",
+        "created": "1593166416036",
+        "description": "",
+        "icon": "fontawesome-v5-solid:database",
+        "id": "e40df1503a7442d6b92dd63b6fe55d83",
+        "label": "Database Management",
+        "meta_classification": "",
+        "meta_datatag": "",
+        "meta_schema": "",
+        "order": "0",
+        "owner": "aee2b61c963646eea33f0f46b3701d3e",
+        "parent": "9dfbab42701d40da88e208c828755ecc",
+        "ref_display": "Database",
+        "schema_version": "0.0",
+        "system_updated": "0"
+      }
+    }
+  }
+}

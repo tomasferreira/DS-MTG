@@ -1,0 +1,34 @@
+{
+    "bucket_definition": {
+        "kww2xjs9": {
+            "attributes": {
+                "display": "[\"name\"]"
+            },
+            "id": "kww2xjs9",
+            "labels": {
+                "label": "Card",
+                "labelp": "Cards"
+            },
+            "name": "card",
+            "schema_tag": "",
+            "slots": [
+                {
+                    "attributes": {
+                        "maxlength": "0",
+                        "only_alphanum": "false",
+                        "only_lowercase": "false",
+                        "only_uppercase": "false",
+                        "pattern_validation": "0"
+                    },
+                    "labels": {
+                        "label": "Name",
+                        "labelp": "Names"
+                    },
+                    "name": "name",
+                    "type": "string"
+                }
+            ],
+            "type": "records"
+        }
+    }
+}
