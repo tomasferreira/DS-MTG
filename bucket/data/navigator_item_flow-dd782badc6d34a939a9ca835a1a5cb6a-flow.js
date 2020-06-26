@@ -29,7 +29,7 @@
         "isList": "0",
         "isWizard": "0",
         "name": "Run Script",
-        "script": "var API = require(\"dev.mtg/api/api\");\nnew API().sync();",
+        "script": "var API = require(\"dev.mtg/api/api\");\nnew API().syncAll();",
         "show_logging": "0",
         "suppress_messages": "0",
         "use_ids": "0"
@@ -62,7 +62,7 @@
         "cancel": "Cancel",
         "default_button": "ok",
         "id": "dc04294ab9da5ad4a620b83582556542",
-        "message": "Sure?",
+        "message": "Sync all cards?",
         "name": "Confirmation",
         "ok": "OK",
         "show_cancel": "1",
