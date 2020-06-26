@@ -1,5 +1,5 @@
-// 'esversion: 6';
-// var HTTPScriptable = require("core/HTTPScriptable");
+'esversion: 6';
+var HTTPScriptable = require("core/HTTPScriptable");
 
 module.exports = Class.create({
 	syncAll: function() {
