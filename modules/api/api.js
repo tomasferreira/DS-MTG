@@ -2,7 +2,7 @@
 // var HTTPScriptable = require("core/HTTPScriptable");
 
 module.exports = Class.create({
-	sync: function() {
+	syncAll: function() {
 		var h = new HTTPScriptable('https://www.mtgjson.com/json/RAV.json');
         let response = h.get();
         console.log("query got HTTP code: " + response.getResponseCode());
