@@ -11,7 +11,7 @@
           "condition": "",
           "order": 0,
           "text": "Always",
-          "to": "dc04294ab9da5ad4a620b83582556542",
+          "to": "c56045bec4bdbaba7cd59736a825ad0a",
           "type": "always"
         }
       ],
@@ -88,7 +88,7 @@
         }
       ],
       "text": "Confirmation",
-      "top": 0,
+      "top": 70,
       "type": "confirm",
       "width": 100
     }
