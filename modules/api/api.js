@@ -1,26 +1,23 @@
 'esversion: 6';
 var HTTPScriptable = require("core/HTTPScriptable");
 
-export default Class.create({
-	sync: function(id) {
-		console.log('hello sync');
-		
-
-		// let response = h.get();
-        // console.log("query got HTTP code: " + response.getResponseCode());
-        // let responseObj = JSON.parse(response.getResponseBody()).cards;
+module.exports = Class.create({
+	sync: function() {
+		var h = new HTTPScriptable('https://www.mtgjson.com/json/RAV.json');
+        let response = h.get();
+        console.log("query got HTTP code: " + response.getResponseCode());
+        // let responseObj = JSON.parse(response.getResponseBody());
         // let records = [];
         // if(!responseObj) return records;
-		// let counter = 1;
         // responseObj.forEach(message => {
         //     let record = {
-        //         id: counter,
+        //         id: message.Id,
+        //         message: message.Message ? message.Message : '',
+        //         creator: message.CreatorName ? message.CreatorName : '',
+        //         created: message.CreateOn ? Date.parse(message.CreateOn) : '',
         //     };
         //     records.push(record);
-		// 	counter++;
         // });
         // return records;
-
-
 	}
 });
