@@ -34,12 +34,16 @@ module.exports = Class.create({
                 const card = responseObj[cardName];
 
                 var cardRecord = new FRecord('card');
+                console.log(cardRecord.getRecord(uuid));
+                console.log(cardRecord.name)
+
 
                 // cardRecord.uuid = card.uuid;
-                cardRecord.name = card.name;
-                cardRecord.id = card.uuid;
+                // cardRecord.name = card.name;
+                // cardRecord.id = card.uuid;
 
-                cardRecord.insert();
+                // cardRecord.insert();
+                break;
             }
         }
         return records;
