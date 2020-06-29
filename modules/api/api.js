@@ -3,7 +3,7 @@ var HTTPScriptable = require("core/HTTPScriptable");
 
 module.exports = Class.create({
 	syncAll: function() {
-        var h = new HTTPScriptable('https://www.mtgjson.com/json/AllCards.json');
+        var h = new HTTPScriptable('https://www.mtgjson.com/files/StandardCards.json');
         let response;
         try {
             response = h.get();
