@@ -45,7 +45,7 @@ module.exports = Class.create({
                 cardRecord.name = card.name;
                 cardRecord.text = card.text;
 
-                // cardRecord.colors = card.colors.join('||');
+                cardRecord.colors = card.colors.join('||');
 
 
                 if (cardRecord.isNewRecord()) {
@@ -54,7 +54,7 @@ module.exports = Class.create({
                 } else {
                     cardRecord.update();
                 }
-                break;
+                // break;
             }
         }
         return records;
