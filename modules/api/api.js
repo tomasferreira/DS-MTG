@@ -2,22 +2,31 @@
 var HTTPScriptable = require("core/HTTPScriptable");
 
 module.exports = Class.create({
-	syncAll: function() {
+    deleteAll: function () {
+
+        var cardRecord = new FRecord('card');
+        cardRecord.search();
+        while (cardRecord.next()) {
+            cardRecord.del();
+        }
+    },
+
+    syncAll: function () {
         var h = new HTTPScriptable('https://www.mtgjson.com/files/StandardCards.json');
         let response;
         try {
             response = h.get();
         } catch (error) {
-           console.log('error: ' + error); 
-           return;
+            console.log('error: ' + error);
+            return;
         }
         console.log("query got HTTP code: " + response.getResponseCode());
 
         let responseObj = JSON.parse(response.getResponseBody());
-        if(!responseObj) return;
+        if (!responseObj) return;
 
         console.log('response length: ' + Object.keys(responseObj).length);
-        
+
         for (const cardName in responseObj) {
             if (responseObj.hasOwnProperty(cardName)) {
                 console.log(cardName);
@@ -33,5 +42,5 @@ module.exports = Class.create({
             }
         }
         return records;
-	}
+    }
 });
