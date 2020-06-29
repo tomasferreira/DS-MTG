@@ -41,6 +41,7 @@ module.exports = Class.create({
                     // cardRecord.rarity = card.rarity;
                     cardRecord.text = card.text;
                     cardRecord.name = card.name;
+                    cardRecord.colors = card.colors;
                     // cardRecord.id = card.uuid;
 
                     cardRecord.update();
@@ -48,7 +49,7 @@ module.exports = Class.create({
                 } else {
                     console.log('card not found');
                 }
-                // break;
+                break;
             }
         }
         return records;
