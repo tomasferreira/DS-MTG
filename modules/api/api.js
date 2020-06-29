@@ -46,7 +46,11 @@ module.exports = Class.create({
                 // cardRecord.colors = null;
                 // cardRecord.id = card.uuid;
 
-                cardRecord.update();
+                if (cardRecord.isNewRecord()) {
+                    cardRecord.insert();
+                } else {
+                    cardRecord.update();
+                }
                 break;
             }
         }
