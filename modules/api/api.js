@@ -7,7 +7,7 @@ module.exports = Class.create({
         var cardRecord = new FRecord('card');
         cardRecord.search();
         while (cardRecord.next()) {
-            console.log('deleting record: ' + cardRecord.name)
+            console.log('deleting record: ' + cardRecord.name);
             cardRecord.del();
         }
     },
@@ -31,15 +31,15 @@ module.exports = Class.create({
         for (const cardName in responseObj) {
             if (responseObj.hasOwnProperty(cardName)) {
                 console.log(cardName);
-                // const card = responseObj[cardName];
+                const card = responseObj[cardName];
 
-                // var cardRecord = new FRecord('card');
+                var cardRecord = new FRecord('card');
 
                 // cardRecord.uuid = card.uuid;
-                // cardRecord.name = card.name;
+                cardRecord.name = card.name;
 
-                // cardRecord.insert();
-                // break;
+                cardRecord.insert();
+                break;
             }
         }
         return records;
