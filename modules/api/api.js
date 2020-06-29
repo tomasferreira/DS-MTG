@@ -41,7 +41,7 @@ module.exports = Class.create({
                     // cardRecord.rarity = card.rarity;
                     cardRecord.text = card.text;
                     cardRecord.name = card.name;
-                    cardRecord.colors = card.colors;
+                    cardRecord.colors = card.colors.join(',');
                     // cardRecord.id = card.uuid;
 
                     cardRecord.update();
