@@ -34,16 +34,20 @@ module.exports = Class.create({
                 const card = responseObj[cardName];
 
                 var cardRecord = new FRecord('card');
-                console.log(cardRecord.getRecord(card.uuid));
-                console.log(cardRecord.name)
+                if (cardRecord.getRecord(card.uuid)) {
+                    console.log(cardRecord.name)
 
 
-                // cardRecord.rarity = card.rarity;
-                cardRecord.text = card.text;
-                cardRecord.name = card.name;
-                // cardRecord.id = card.uuid;
+                    // cardRecord.rarity = card.rarity;
+                    cardRecord.text = card.text;
+                    cardRecord.name = card.name;
+                    // cardRecord.id = card.uuid;
 
-                cardRecord.update();
+                    cardRecord.update();
+
+                } else {
+                    console.log('card not found');
+                }
                 break;
             }
         }
