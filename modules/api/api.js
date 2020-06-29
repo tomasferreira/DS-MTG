@@ -38,7 +38,8 @@ module.exports = Class.create({
                 console.log(cardRecord.name)
 
 
-                cardRecord.rarity = card.rarity;
+                // cardRecord.rarity = card.rarity;
+                cardRecord.text = card.text;
                 cardRecord.name = card.name;
                 // cardRecord.id = card.uuid;
 
