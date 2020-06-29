@@ -26,6 +26,38 @@
                     },
                     "name": "name",
                     "type": "string"
+                },
+                {
+                    "attributes": {
+                        "maxlength": "0",
+                        "only_alphanum": "false",
+                        "only_lowercase": "false",
+                        "only_uppercase": "false",
+                        "pattern_validation": "0"
+                    },
+                    "labels": {
+                        "label": "Text",
+                        "labelp": "Texts"
+                    },
+                    "name": "text",
+                    "type": "string"
+                },
+                {
+                    "attributes": {
+                        "allow_add_delete": "true",
+                        "form_layout": "{\"slots\":{\"color\":{\"type\":\"string\",\"attributes\":{},\"labels\":{\"label\":\"Color\",\"labelp\":\"Colors\"},\"name\":\"color\",\"bundle\":\"dev.mtg\"}},\"slotsChanged\":true,\"layout\":{\"version\":1,\"layout\":[{\"type\":\"section\",\"colData\":[],\"cols\":[[{\"type\":\"slot\",\"name\":\"color\"}]],\"guid\":\"cer6jq\"}],\"pageData\":{}},\"display_rules\":[]}",
+                        "height": "300",
+                        "hide_row_count": "false",
+                        "maintain_list_order": "0",
+                        "matrix_slots": "{\"matrix_x\":\"color\",\"matrix_y\":\"color\"}",
+                        "type": "custom"
+                    },
+                    "labels": {
+                        "label": "Colors",
+                        "labelp": "Colors"
+                    },
+                    "name": "colors",
+                    "type": "list"
                 }
             ],
             "type": "records"
