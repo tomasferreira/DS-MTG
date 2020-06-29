@@ -38,12 +38,19 @@ module.exports = Class.create({
                     console.log('card not found, creating new');
                     cardRecord.newRecord();
                 }
+
                 // console.log(cardRecord.name)
                 // cardRecord.rarity = card.rarity;
                 cardRecord.json = JSON.stringify(card);
                 cardRecord.name = card.name;
                 cardRecord.text = card.text;
-                // cardRecord.colors = null;
+
+                let colors = {};
+                card.colors.forEach(color => {
+                    colors.color = color;
+                });
+
+                cardRecord.colors = colors;
                 // cardRecord.id = card.uuid;
 
                 if (cardRecord.isNewRecord()) {
