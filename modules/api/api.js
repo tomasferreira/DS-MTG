@@ -7,6 +7,7 @@ module.exports = Class.create({
         var cardRecord = new FRecord('card');
         cardRecord.search();
         while (cardRecord.next()) {
+            console.log('deleting record: ' + cardRecord.name)
             cardRecord.del();
         }
     },
