@@ -1,0 +1,23 @@
+{
+  "bucket_data": {
+    "navigator_item_flow": {
+      "f5cee812180d47bf9bde2be0f03cdafc": {
+        "color": "#aaaaaa",
+        "created": "1593425815830",
+        "description": "",
+        "flow": "separate_file://bucket/data/navigator_item_flow-f5cee812180d47bf9bde2be0f03cdafc-flow.js",
+        "icon": "list-alt",
+        "id": "f5cee812180d47bf9bde2be0f03cdafc",
+        "label": "Delete all records",
+        "meta_classification": "",
+        "meta_datatag": "",
+        "meta_schema": "",
+        "order": "2",
+        "owner": "aee2b61c963646eea33f0f46b3701d3e",
+        "parent": "9dfbab42701d40da88e208c828755ecc",
+        "schema_version": "0.0",
+        "system_updated": "0"
+      }
+    }
+  }
+}
