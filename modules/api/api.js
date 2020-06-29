@@ -48,7 +48,7 @@ module.exports = Class.create({
                 } else {
                     console.log('card not found');
                 }
-                break;
+                // break;
             }
         }
         return records;
