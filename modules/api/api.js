@@ -40,7 +40,6 @@ module.exports = Class.create({
                 cardRecord.id = card.uuid;
 
                 cardRecord.insert();
-                break;
             }
         }
         return records;
