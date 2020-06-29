@@ -29,6 +29,19 @@
                 },
                 {
                     "attributes": {
+                        "filterable": false,
+                        "simple_input": "false",
+                        "use_large": "false"
+                    },
+                    "labels": {
+                        "label": "JSON",
+                        "labelp": "JSONs"
+                    },
+                    "name": "json",
+                    "type": "json"
+                },
+                {
+                    "attributes": {
                         "maxlength": "0",
                         "only_alphanum": "false",
                         "only_lowercase": "false",
@@ -45,9 +58,12 @@
                 {
                     "attributes": {
                         "allow_add_delete": "true",
-                        "form_layout": "{\"slots\":{\"color\":{\"type\":\"string\",\"attributes\":{},\"labels\":{\"label\":\"Color\",\"labelp\":\"Colors\"},\"name\":\"color\",\"bundle\":\"dev.mtg\"}},\"slotsChanged\":true,\"layout\":{\"version\":1,\"layout\":[{\"type\":\"section\",\"colData\":[],\"cols\":[[{\"type\":\"slot\",\"name\":\"color\"}]],\"guid\":\"cer6jq\"}],\"pageData\":{}},\"display_rules\":[]}",
+                        "form_layout": "{\"slots\":{\"color\":{\"type\":\"string\",\"attributes\":{},\"labels\":{\"label\":\"Color\",\"labelp\":\"Colors\"},\"name\":\"color\",\"bundle\":\"dev.mtg\"}},\"slotsChanged\":true,\"layout\":{\"version\":1,\"layout\":[{\"type\":\"section\",\"colData\":[],\"cols\":[[{\"type\":\"slot\",\"name\":\"color\"}]],\"guid\":\"gp9lpd\"}],\"pageData\":{}},\"display_rules\":[]}",
                         "height": "300",
                         "hide_row_count": "false",
+                        "list_layout": [
+                            "color"
+                        ],
                         "maintain_list_order": "0",
                         "matrix_slots": "{\"matrix_x\":\"color\",\"matrix_y\":\"color\"}",
                         "type": "custom"

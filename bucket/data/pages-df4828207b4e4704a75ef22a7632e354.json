@@ -51,26 +51,17 @@
                                 "type": "slot"
                               },
                               {
-                                "name": "id",
+                                "name": "colors",
+                                "type": "slot"
+                              },
+                              {
+                                "name": "json",
                                 "type": "slot"
                               }
                             ]
                           ],
                           "columns": 1,
                           "guid": "8m4wvy",
-                          "type": "section"
-                        },
-                        {
-                          "colData": [ ],
-                          "cols": [
-                            [
-                              {
-                                "name": "colors",
-                                "type": "slot"
-                              }
-                            ]
-                          ],
-                          "guid": "2mo7d9",
                           "type": "section"
                         }
                       ],
