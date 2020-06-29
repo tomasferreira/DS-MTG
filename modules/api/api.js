@@ -29,7 +29,7 @@ module.exports = Class.create({
                 // cardRecord.name = card.name;
 
                 // cardRecord.insert();
-                break;
+                // break;
             }
         }
         return records;
