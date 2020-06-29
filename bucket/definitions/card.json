@@ -57,23 +57,50 @@
                 },
                 {
                     "attributes": {
-                        "allow_add_delete": "true",
-                        "form_layout": "{\"slots\":{\"color\":{\"type\":\"string\",\"attributes\":{},\"labels\":{\"label\":\"Color\",\"labelp\":\"Colors\"},\"name\":\"color\",\"bundle\":\"dev.mtg\"}},\"slotsChanged\":true,\"layout\":{\"version\":1,\"layout\":[{\"type\":\"section\",\"colData\":[],\"cols\":[[{\"type\":\"slot\",\"name\":\"color\"}]],\"guid\":\"gp9lpd\"}],\"pageData\":{}},\"display_rules\":[]}",
-                        "height": "300",
-                        "hide_row_count": "false",
-                        "list_layout": [
-                            "color"
+                        "buckets": "false",
+                        "buckets_use_both": "false",
+                        "choice_type": "dropdown",
+                        "choices": [
+                            {
+                                "disabled": false,
+                                "label": "Blue",
+                                "value": "U"
+                            },
+                            {
+                                "disabled": false,
+                                "label": "White",
+                                "value": "W"
+                            },
+                            {
+                                "disabled": false,
+                                "label": "Black",
+                                "value": "B"
+                            },
+                            {
+                                "disabled": false,
+                                "label": "Red",
+                                "value": "R"
+                            },
+                            {
+                                "disabled": false,
+                                "label": "Green",
+                                "value": "G"
+                            }
                         ],
-                        "maintain_list_order": "0",
-                        "matrix_slots": "{\"matrix_x\":\"color\",\"matrix_y\":\"color\"}",
-                        "type": "custom"
+                        "hide_jumpto": "false",
+                        "multiple": true,
+                        "none_option": "false",
+                        "slot_types": false,
+                        "slots": "false",
+                        "sort_choices": "0",
+                        "use_parent_bucket": "false"
                     },
                     "labels": {
                         "label": "Colors",
                         "labelp": "Colors"
                     },
                     "name": "colors",
-                    "type": "list"
+                    "type": "choice"
                 }
             ],
             "type": "records"

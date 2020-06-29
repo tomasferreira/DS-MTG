@@ -1,0 +1,27 @@
+{
+  "bucket_data": {
+    "display_rule": {
+      "668f4fefca9e41568883ba5f2e5b073d": {
+        "active": "1",
+        "bucket": "kww2xjs9",
+        "created": "1593441383971",
+        "description": "",
+        "hidden": [ ],
+        "id": "668f4fefca9e41568883ba5f2e5b073d",
+        "mandatory": [ ],
+        "meta_classification": "",
+        "meta_datatag": "",
+        "meta_schema": "",
+        "order": "0",
+        "owner": "aee2b61c963646eea33f0f46b3701d3e",
+        "readonly": [ ],
+        "schema_version": "0.0",
+        "should_hidden": "0",
+        "should_mandatory": "0",
+        "should_readonly": "1",
+        "slot": "colors",
+        "system_updated": "0"
+      }
+    }
+  }
+}
