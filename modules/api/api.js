@@ -45,13 +45,8 @@ module.exports = Class.create({
                 cardRecord.name = card.name;
                 cardRecord.text = card.text;
 
-                let colors = [];
-                card.colors.forEach(color => {
-                    colors.push({color = color});
-                });
+                cardRecord.colors = card.colors.join('||');
 
-                cardRecord.colors = colors;
-                // cardRecord.id = card.uuid;
 
                 if (cardRecord.isNewRecord()) {
                     cardRecord.id = card.uuid;
