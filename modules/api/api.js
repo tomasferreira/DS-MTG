@@ -42,7 +42,7 @@ module.exports = Class.create({
                     cardRecord.json = JSON.stringify(card);
                     cardRecord.name = card.name;
                     cardRecord.text = card.text;
-                    // cardRecord.colors = card.colors.join(',');
+                    cardRecord.colors = null;
                     // cardRecord.id = card.uuid;
 
                     cardRecord.update();
