@@ -37,6 +37,7 @@ module.exports = Class.create({
 
                 // cardRecord.uuid = card.uuid;
                 cardRecord.name = card.name;
+                cardRecord.id = 1;
 
                 cardRecord.insert();
                 break;
