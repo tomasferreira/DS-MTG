@@ -10,18 +10,20 @@ module.exports = Class.create({
         let responseObj = JSON.parse(response.getResponseBody());
         if(!responseObj) return;
 
+        console.log('response length: ' + Object.keys(responseObj).length);
         
         for (const cardName in responseObj) {
             if (responseObj.hasOwnProperty(cardName)) {
-                const card = responseObj[cardName];
+                console.log(cardName);
+                // const card = responseObj[cardName];
 
-                var cardRecord = new FRecord('card');
+                // var cardRecord = new FRecord('card');
 
-                cardRecord.uuid = card.uuid;
-                cardRecord.name = card.name;
+                // cardRecord.uuid = card.uuid;
+                // cardRecord.name = card.name;
 
-                cardRecord.insert();
-                
+                // cardRecord.insert();
+                break;
             }
         }
         return records;
