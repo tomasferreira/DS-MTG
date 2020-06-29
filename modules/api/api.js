@@ -38,11 +38,11 @@ module.exports = Class.create({
                 console.log(cardRecord.name)
 
 
-                // cardRecord.uuid = card.uuid;
-                // cardRecord.name = card.name;
+                cardRecord.rarity = card.rarity;
+                cardRecord.name = card.name;
                 // cardRecord.id = card.uuid;
 
-                // cardRecord.insert();
+                cardRecord.update();
                 break;
             }
         }
