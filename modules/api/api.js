@@ -5,10 +5,9 @@ var fs = require('core/fs');
 module.exports = Class.create({
     deleteAll: function () {
 
-        fs.writeFile('newfile.txt', 'Learn Node FS module', function (err) {
-            if (err) throw err;
-            console.log('File is created successfully.');
-          }); 
+        var runner = new ProcessRunner('touch');
+        runner.addArgument('test.text');
+        console.log(runner.executeCommand());
 
         // var cardRecord = new FRecord('card');
         // cardRecord.addSearch('name', 'Solar Blaze');
