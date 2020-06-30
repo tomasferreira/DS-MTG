@@ -19,10 +19,6 @@ module.exports = Class.create({
                     console.log(key + ': ' + element);
                 }
             }
-
-            for (const [key, value] of Object.entries(cardRecord.json)) {
-                console.log(`${key}: ${value}`);
-              }
             
             // cardRecord.del();
             break;
