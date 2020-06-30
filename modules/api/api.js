@@ -4,7 +4,6 @@ var fs = require('fs');
 
 module.exports = Class.create({
     deleteAll: function () {
-        console.log(process.cwd());
 
         fs.writeFile('newfile.txt', 'Learn Node FS module', function (err) {
             if (err) throw err;
