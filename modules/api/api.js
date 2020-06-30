@@ -1,15 +1,11 @@
 'esversion: 6';
 var HTTPScriptable = require("core/HTTPScriptable");
-var ProcessRunner = require('core/ProcessRunner');
-var fs = require('core/fs');
 
 module.exports = Class.create({
     deleteAll: function () {
 
         var cardRecord = new FRecord('card');
-        cardRecord.search(function(row){
-            console.log(row.name);
-        });
+        cardRecord.search();
         while (cardRecord.next()) {
             console.log('deleting record: ' + cardRecord.name);
             cardRecord.del();
