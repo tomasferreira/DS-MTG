@@ -27,6 +27,7 @@
                   "bucket": "kww2xjs9",
                   "columns": [
                     "name",
+                    "colors",
                     "text"
                   ],
                   "component": "list",

@@ -55,6 +55,18 @@
                                 "type": "slot"
                               },
                               {
+                                "name": "test",
+                                "type": "slot"
+                              },
+                              {
+                                "name": "converted_mana_cost",
+                                "type": "slot"
+                              },
+                              {
+                                "name": "mana_cost",
+                                "type": "slot"
+                              },
+                              {
                                 "name": "json",
                                 "type": "slot"
                               }

@@ -21,6 +21,21 @@
                         "pattern_validation": "0"
                     },
                     "labels": {
+                        "label": "Mana cost",
+                        "labelp": "Mana costs"
+                    },
+                    "name": "mana_cost",
+                    "type": "string"
+                },
+                {
+                    "attributes": {
+                        "maxlength": "0",
+                        "only_alphanum": "false",
+                        "only_lowercase": "false",
+                        "only_uppercase": "false",
+                        "pattern_validation": "0"
+                    },
+                    "labels": {
                         "label": "Name",
                         "labelp": "Names"
                     },
@@ -39,6 +54,24 @@
                     },
                     "name": "json",
                     "type": "json"
+                },
+                {
+                    "attributes": {
+                        "format": "true",
+                        "greater_validation": "0",
+                        "greater_value": "0",
+                        "less_validation": "0",
+                        "less_value": "0",
+                        "range_max": "0",
+                        "range_min": "0",
+                        "range_validation": "0"
+                    },
+                    "labels": {
+                        "label": "Converted mana cost",
+                        "labelp": "Converted mana costs"
+                    },
+                    "name": "converted_mana_cost",
+                    "type": "integer"
                 },
                 {
                     "attributes": {
@@ -89,7 +122,8 @@
                         ],
                         "hide_jumpto": "false",
                         "multiple": true,
-                        "none_option": "false",
+                        "none_label": "No color",
+                        "none_option": false,
                         "slot_types": false,
                         "slots": "false",
                         "sort_choices": "0",
