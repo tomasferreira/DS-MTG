@@ -12,7 +12,7 @@ module.exports = Class.create({
         }
     },
 
-    syncAll: function () {
+    syncCards: function () {
         var h = new HTTPScriptable('https://www.mtgjson.com/files/StandardCards.json');
         let response;
         
@@ -63,6 +63,29 @@ module.exports = Class.create({
                 // break;
             }
         }
-        return records;
+    },
+
+    syncAll: function(){
+        let h = new HTTPScriptable('https://www.mtgjson.com/files/StandardPrintings.json');
+        let response;
+        
+        try {
+            response = h.get();
+        } catch (error) {
+            console.log('error: ' + error);
+            return;
+        }
+
+        let responseCode = response.getResponseCode();
+        let responseObj = JSON.parse(response.getResponseBody());
+        console.log("query got HTTP code: " + responseCode);
+
+        if (responseCode != 200 || !responseObj) {
+            console.log('bad response');
+            return;
+        }
+
+        console.log('response length: ' + Object.keys(responseObj).length);
+
     }
 });
