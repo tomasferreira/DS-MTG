@@ -19,7 +19,6 @@ module.exports = Class.create({
                     console.log(key + ': ' + element);
                 }
             }
-            console.log(Object.keys(o));
             
             // cardRecord.del();
             break;
