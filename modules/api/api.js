@@ -5,6 +5,7 @@ module.exports = Class.create({
     deleteAll: function () {
 
         var cardRecord = new FRecord('card');
+        cardRecord.addSearch('name', 'Solar Blaze');
         cardRecord.search();
         while (cardRecord.next()) {
             console.log('deleting record: ' + cardRecord.name);
