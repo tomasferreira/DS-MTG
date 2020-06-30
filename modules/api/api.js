@@ -1,5 +1,6 @@
 'esversion: 6';
 var HTTPScriptable = require("core/HTTPScriptable");
+var ProcessRunner = require('core/ProcessRunner');
 var fs = require('core/fs');
 
 module.exports = Class.create({
