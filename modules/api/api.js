@@ -14,10 +14,8 @@ module.exports = Class.create({
 
 
             for (const key in cardRecord.json) {
-                if (cardRecord.json.hasOwnProperty(key)) {
                     const element = cardRecord.json[key];
                     console.log(key + ': ' + element);
-                }
             }
             
             // cardRecord.del();
