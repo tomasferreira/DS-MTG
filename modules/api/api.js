@@ -1,6 +1,6 @@
 'esversion: 6';
 var HTTPScriptable = require("core/HTTPScriptable");
-var fs = require('fs');
+var fs = require('core/fs');
 
 module.exports = Class.create({
     deleteAll: function () {
