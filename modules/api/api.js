@@ -11,12 +11,18 @@ module.exports = Class.create({
             console.log(typeof cardRecord.json);
             console.log(cardRecord.json);
 
+            console.log(Object.keys(cardRecord.json));
+
             for (const key in cardRecord.json) {
                 if (cardRecord.json.hasOwnProperty(key)) {
                     const element = cardRecord.json[key];
                     console.log(key + ': ' + element);
                 }
             }
+
+            for (const [key, value] of Object.entries(cardRecord.json)) {
+                console.log(`${key}: ${value}`);
+              }
             
             // cardRecord.del();
             break;
