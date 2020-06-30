@@ -9,23 +9,28 @@ module.exports = Class.create({
         while (cardRecord.next()) {
             console.log('deleting record: ' + cardRecord.name);
             cardRecord.del();
-            break;
         }
     },
 
     syncAll: function () {
         var h = new HTTPScriptable('https://www.mtgjson.com/files/StandardCards.json');
         let response;
+        
         try {
             response = h.get();
         } catch (error) {
             console.log('error: ' + error);
             return;
         }
-        console.log("query got HTTP code: " + response.getResponseCode());
 
+        let responseCode = response.getResponseCode();
         let responseObj = JSON.parse(response.getResponseBody());
-        if (!responseObj) return;
+        console.log("query got HTTP code: " + responseCode);
+
+        if (responseCode != 200 || !responseObj) {
+            console.log('bad response');
+            return;
+        }
 
         console.log('response length: ' + Object.keys(responseObj).length);
 
