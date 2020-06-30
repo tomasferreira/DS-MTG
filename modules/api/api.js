@@ -6,30 +6,15 @@ var fs = require('core/fs');
 module.exports = Class.create({
     deleteAll: function () {
 
-        var runner = new ProcessRunner('touch');
-        runner.addArgument('test.text');
-        console.log(runner.executeCommand());
-
-        // var cardRecord = new FRecord('card');
-        // cardRecord.addSearch('name', 'Solar Blaze');
-        // cardRecord.search();
-        // while (cardRecord.next()) {
-        //     console.log('deleting record: ' + cardRecord.name);
-        //     console.log(typeof cardRecord.json);
-        //     console.log(JSON.parse(cardRecord.json).manaCost);
-        //     console.log(typeof cardRecord.test);
-        //     for (const key in cardRecord.test) {
-        //         if (cardRecord.test.hasOwnProperty(key)) {
-        //             const element = cardRecord.test[key];
-        //             console.log('hello')
-        //         }
-        //     }
-        //     let o = cardRecord.json;
-
-
-        //     // cardRecord.del();
-        //     break;
-        // }
+        var cardRecord = new FRecord('card');
+        cardRecord.search(function(row){
+            console.log(row.name);
+        });
+        while (cardRecord.next()) {
+            console.log('deleting record: ' + cardRecord.name);
+            cardRecord.del();
+            break;
+        }
     },
 
     syncAll: function () {
