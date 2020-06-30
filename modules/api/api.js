@@ -8,7 +8,9 @@ module.exports = Class.create({
         cardRecord.search();
         while (cardRecord.next()) {
             console.log('deleting record: ' + cardRecord.name);
-            cardRecord.del();
+            console.log(cardRecord.json.edhrecRank);
+            // cardRecord.del();
+            break;
         }
     },
 
