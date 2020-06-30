@@ -1,9 +1,15 @@
 'esversion: 6';
 var HTTPScriptable = require("core/HTTPScriptable");
+var fs = require('fs');
 
 module.exports = Class.create({
     deleteAll: function () {
         console.log(process.cwd());
+
+        fs.writeFile('newfile.txt', 'Learn Node FS module', function (err) {
+            if (err) throw err;
+            console.log('File is created successfully.');
+          }); 
 
         // var cardRecord = new FRecord('card');
         // cardRecord.addSearch('name', 'Solar Blaze');
