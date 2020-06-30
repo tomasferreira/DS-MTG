@@ -9,6 +9,8 @@ module.exports = Class.create({
         while (cardRecord.next()) {
             console.log('deleting record: ' + cardRecord.name);
             console.log(typeof cardRecord.json);
+            console.dir(cardRecord.json);
+            
             // cardRecord.del();
             break;
         }
