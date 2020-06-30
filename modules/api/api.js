@@ -11,7 +11,10 @@ module.exports = Class.create({
             console.log('deleting record: ' + cardRecord.name);
             console.log(typeof cardRecord.json);
             console.log(JSON.parse(cardRecord.json).manaCost);
-            console.log(cardRecord.test[0].slot2);
+            console.log(typeof cardRecord.test);
+            cardRecord.test.forEach(element => {
+                console.log(element);
+            });
             let o = cardRecord.json;
 
 
