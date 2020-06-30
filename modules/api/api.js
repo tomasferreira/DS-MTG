@@ -10,8 +10,8 @@ module.exports = Class.create({
             console.log('deleting record: ' + cardRecord.name);
             console.log(typeof cardRecord.json);
             console.log(cardRecord.json);
+            let o = cardRecord.json;
 
-            console.log(Object.keys(cardRecord.json));
 
             for (const key in cardRecord.json) {
                 if (cardRecord.json.hasOwnProperty(key)) {
@@ -19,6 +19,7 @@ module.exports = Class.create({
                     console.log(key + ': ' + element);
                 }
             }
+            console.log(Object.keys(o));
             
             // cardRecord.del();
             break;
