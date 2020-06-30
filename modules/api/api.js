@@ -9,15 +9,10 @@ module.exports = Class.create({
         while (cardRecord.next()) {
             console.log('deleting record: ' + cardRecord.name);
             console.log(typeof cardRecord.json);
-            console.log(cardRecord.json);
+            console.log(JSON.parse(cardRecord.json).manaCost);
             let o = cardRecord.json;
 
 
-            for (const key in cardRecord.json) {
-                    const element = cardRecord.json[key];
-                    console.log(key + ': ' + element);
-            }
-            
             // cardRecord.del();
             break;
         }
