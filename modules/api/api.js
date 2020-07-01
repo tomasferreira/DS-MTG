@@ -15,7 +15,7 @@ module.exports = Class.create({
     syncCards: function () {
         var h = new HTTPScriptable('https://www.mtgjson.com/files/StandardCards.json');
         let response;
-        
+
         try {
             response = h.get();
         } catch (error) {
@@ -65,10 +65,10 @@ module.exports = Class.create({
         }
     },
 
-    syncAll: function(){
+    syncAll: function () {
         let h = new HTTPScriptable('https://www.mtgjson.com/files/StandardPrintings.json');
         let response;
-        
+
         try {
             response = h.get();
         } catch (error) {
@@ -87,5 +87,35 @@ module.exports = Class.create({
 
         console.log('response length: ' + Object.keys(responseObj).length);
 
+        for (const setName in responseObj) {
+            if (responseObj.hasOwnProperty(setName)) {
+                const set = responseObj[setName];
+
+                set.cards.forEach(card => {
+
+                    var cardRecord = new FRecord('card');
+                    if (!cardRecord.getRecord(card.uuid)) {
+                        console.log('card not found, creating new');
+                        cardRecord.newRecord();
+                    }
+
+                    // console.log(cardRecord.name)
+                    // cardRecord.rarity = card.rarity;
+                    cardRecord.json = JSON.stringify(card);
+                    cardRecord.name = card.name;
+                    cardRecord.text = card.text;
+
+                    cardRecord.colors = card.colors.join('||');
+
+
+                    if (cardRecord.isNewRecord()) {
+                        cardRecord.id = card.uuid;
+                        cardRecord.insert();
+                    } else {
+                        cardRecord.update();
+                    }
+                });
+            }
+        }
     }
 });
